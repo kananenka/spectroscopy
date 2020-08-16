@@ -86,4 +86,3 @@ cdef double complex respT(double complex [:] mt, double complex [:] m0,
    free(tmpA)
    return val
 
-                  
