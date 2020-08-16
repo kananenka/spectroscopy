@@ -1,0 +1,29 @@
+{
+   "simulation" : {
+      "title"  : "test",
+      "system" : "water",
+      "xtc_file" : "../traj.xtc",
+      "gro_file" : "../confout.gro",
+      "correlation_time" : 1.5,
+      "dt" : 0.01,
+      "nsegments" : 1,
+      "time_sep" : 2.0,
+      "nfft" : 20000
+   },
+
+   "models" : {
+      "water_model" : "TIP4P",
+      "water_map_OH_stretch" : "gruenbaum_2013_OH"
+   },
+
+   "spectroscopy" : {
+      "vib" : "IR", 
+      "chromophore" : "OH_stretch",  
+      "rlx_time" : 0.26
+   },
+ 
+   "parallel" : {
+      "num_threads" : 40
+   }
+
+}

@@ -1,0 +1,31 @@
+{
+    "hbar": {
+        "value": 5.308,
+        "units": "ps/cm",
+        "doc": "hbar in ps/cm"
+    },
+
+    "rOHcut": {
+        "value": 7.831,
+        "units": "A",
+        "doc": "cut-off for discarding water molecules in e-field OH stretch calculation"
+    },
+
+    "nm_to_A": {
+        "value" : 10.0,
+        "units" : "nm/A",
+        "doc"   : "conversion between nm and Angstroms"
+    },
+  
+    "A_to_au": {
+        "value" : 1.8897259885789,
+        "units" : "A/au",
+        "doc"   : "conversion between Angstroms and atomic units"
+    },
+
+    "au_to_wn": {
+        "value" : 2.19474e5,
+        "units" : "au/cm-1",
+        "doc"   : "conversion between atomic units and wave numbers"
+    }
+}

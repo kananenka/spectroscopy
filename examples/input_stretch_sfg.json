@@ -1,0 +1,31 @@
+{
+   "simulation" : {
+      "title"  : "test",
+      "system" : "water",
+      "xtc_file" : "/work/akanane/users/akanane/SFG/traj.xtc",
+      "gro_file" : "/work/akanane/users/akanane/SFG/confout.gro",
+      "correlation_time" : 1.2,
+      "dt" : 0.01,
+      "nsegments" : 4000,
+      "time_sep" : 1.0,
+      "nfft" : 20000
+   },
+
+   "models" : {
+      "water_model" : "TIP4P/2005",
+      "water_map_OH_stretch" : "gruenbaum_2013_OH",
+      "water_map_HOH_bend" : "ni_2015_HOH"
+   },
+
+   "spectroscopy" : {
+      "vib1" : "SFG", 
+      "chromophore" : "HOH_bend_overtone_OH_stretch",  
+      "rlx_time" : 0.26,
+      "Fermi_coupling" : 25
+   },
+ 
+   "parallel" : {
+      "num_threads" : 40
+   }
+
+}

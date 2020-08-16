@@ -1,0 +1,28 @@
+{
+   "simulation" : {
+      "title"  : "test",
+      "system" : "water",
+      "xtc_file" : "../traj.xtc",
+      "gro_file" : "../confout.gro",
+      "correlation_time" : 1.5,
+      "dt" : 0.01,
+      "nsegments" : 10,
+      "time_sep" : 2.0
+   },
+
+   "models" : {
+      "water_model" : "TIP4P",
+      "water_map" : "gruenbaum_2013"
+   },
+
+   "spectroscopy" : {
+      "vib" : "IR", 
+      "chromophore" : "HOH_bend",  
+      "rlx_time" : 0.26
+   },
+ 
+   "parallel" : {
+      "num_threads" : 40
+   }
+
+}

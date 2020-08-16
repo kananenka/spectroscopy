@@ -1,0 +1,33 @@
+{
+   "TIP4P" : {
+      "name" : "tip4p",
+      "qO" : 0.0,
+      "qM" : -1.040,
+      "qH" : 0.520,
+      "rOH" : 0.9572,
+      "rOM" : 0.15,
+      "aHOH" : 104.52,
+      "mO" : 15.999,
+      "mH" : 1.008,
+      "mM" : 0.0,
+      "paper" : "Jorgensen, W. L.; Chandrasekhar, J.; Madura, J. D.; Impey, R. W.; Klein, M. L., J. Chem. Phys. 79, 926-935 (1983).",
+      "note" : "",
+      "atoms_per_molecule" : 4
+   },
+
+   "TIP4P/2005" : {
+      "name" : "tip4p/2005",
+      "qO" : 0.0,
+      "qM" : -1.040,
+      "qH" : 0.520,
+      "rOH" : 0.9572,
+      "rOM" : 0.1546,
+      "aHOH" : 104.52,
+      "mO" : 15.999,
+      "mH" : 1.008,
+      "mM" : 0.0,
+      "paper" : "Abascal J. L. F.; Vega C., J. Chem. Phys. 123, 234505 (2005).",
+      "note" : " Although your simulation employs water model TIP4P/2005, spectroscopic maps \n were developed for TIP4P geometry and charges. Therefore, I am setting \n atomic charges and M-site location as in TIP4P water model.",
+      "atoms_per_molecule" : 4
+   }
+}
