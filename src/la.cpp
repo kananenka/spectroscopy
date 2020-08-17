@@ -2949,7 +2949,6 @@ static __pyx_t_double_complex __pyx_f_2la_respT(__Pyx_memviewslice __pyx_v_mt, _
  *    free(tmpA)
  *    return val             # <<<<<<<<<<<<<<
  * 
- * 
  */
   __pyx_r = __pyx_v_val;
   goto __pyx_L0;

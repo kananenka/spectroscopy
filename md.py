@@ -9,9 +9,6 @@ import mdtraj as md  # read xtc files
 
 import water
 
-sys.path.append("./data")
-#import const
-
 def main():
    #---------------------------------------------------------------
    #
