@@ -89,8 +89,8 @@ def main():
    #
    sim_time = j['simulation']['nsegments']*(j['simulation']['time_sep']
             + j['simulation']['correlation_time'])-j['simulation']['time_sep']
-   print (" Sim time ", int(sim_time/j['simulation']['dt'])) 
-   print (" ntime ",traj.n_frames)
+   print (" Length of trajectory needed: ", int(sim_time/j['simulation']['dt'])) 
+   print (" Length of trajectory provided: ",traj.n_frames)
    assert traj.n_frames > int(sim_time/j['simulation']['dt']), " Your trajectory is too short "
 
    # check dt from traj object and input
