@@ -12,7 +12,7 @@ sys.path.insert(0, os.path.join(pwd,"src"))
 
 import water
 
-def main():
+def main(input_file):
    #---------------------------------------------------------------
    #
    # start:
@@ -21,24 +21,27 @@ def main():
    myhost = os.uname()[1]
    start = datetime.now()
    print (" \n\n Simulation starting: %s "%(start),flush=True)
-   print (" Hostname: %s "%(myhost),flush=True)
+   print (" Hostname: %s \n\n"%(myhost),flush=True)
 
    #---------------------------------------------------------------
    #
    # read parameters here:
    #
    #---------------------------------------------------------------
-   parser = argparse.ArgumentParser()
-   parser.add_argument("input_file",   help="input json file")
+   #parser = argparse.ArgumentParser()
+   #parser.add_argument("input_file",   help="input json file")
    
-   args = parser.parse_args()
+   #args = parser.parse_args()
 
    #----------------------------------------------------------------
    #
    #  Read parameters from json file
    #
    #----------------------------------------------------------------
-   with open(args.input_file) as json_file:
+   print (" Input file: %s \n"%(input_file),flush=True)
+
+   #with open(args.input_file) as json_file:
+   with open(input_file) as json_file:
       j = json.load(json_file)
 
    #---------------------------------------------------------------
