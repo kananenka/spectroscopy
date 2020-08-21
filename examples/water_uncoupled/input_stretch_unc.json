@@ -2,8 +2,8 @@
    "simulation" : {
       "title"  : "test_unc",
       "system" : "water",
-      "xtc_file" : "../traj.xtc",
-      "gro_file" : "../confout.gro",
+      "xtc_file" : "/home/2136/spec/traj.xtc",
+      "gro_file" : "/home/2136/spec/confout.gro",
       "correlation_time" : 2.0,
       "dt" : 0.01,
       "nsegments" : 10,

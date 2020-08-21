@@ -7,6 +7,9 @@ from pathlib import Path
 import numpy as np
 import mdtraj as md  # read xtc files
 
+pwd = "/work/akanane/sw/spectroscopy"
+sys.path.insert(0, os.path.join(pwd,"src"))
+
 import water
 
 def main():

@@ -26,7 +26,7 @@ ext_modules = [
 
 setup(
    cmdclass = {'build_ext': build_ext},
-   ext_modules=cythonize(ext_modules, language_level=3),
+   ext_modules=cythonize(ext_modules, language_level=3, annotate=True),
    include_dirs=[np.get_include(),"."]
 )
 

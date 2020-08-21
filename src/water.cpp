@@ -1010,7 +1010,7 @@ typedef volatile __pyx_atomic_int_type __pyx_atomic_int;
 #endif
 
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":697
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":697
  * # in Cython to enable them only on the right systems.
  * 
  * ctypedef npy_int8       int8_t             # <<<<<<<<<<<<<<
@@ -1019,7 +1019,7 @@ typedef volatile __pyx_atomic_int_type __pyx_atomic_int;
  */
 typedef npy_int8 __pyx_t_5numpy_int8_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":698
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":698
  * 
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t             # <<<<<<<<<<<<<<
@@ -1028,7 +1028,7 @@ typedef npy_int8 __pyx_t_5numpy_int8_t;
  */
 typedef npy_int16 __pyx_t_5numpy_int16_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":699
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":699
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t             # <<<<<<<<<<<<<<
@@ -1037,7 +1037,7 @@ typedef npy_int16 __pyx_t_5numpy_int16_t;
  */
 typedef npy_int32 __pyx_t_5numpy_int32_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":700
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":700
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t
  * ctypedef npy_int64      int64_t             # <<<<<<<<<<<<<<
@@ -1046,7 +1046,7 @@ typedef npy_int32 __pyx_t_5numpy_int32_t;
  */
 typedef npy_int64 __pyx_t_5numpy_int64_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":704
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":704
  * #ctypedef npy_int128     int128_t
  * 
  * ctypedef npy_uint8      uint8_t             # <<<<<<<<<<<<<<
@@ -1055,7 +1055,7 @@ typedef npy_int64 __pyx_t_5numpy_int64_t;
  */
 typedef npy_uint8 __pyx_t_5numpy_uint8_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":705
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":705
  * 
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t             # <<<<<<<<<<<<<<
@@ -1064,7 +1064,7 @@ typedef npy_uint8 __pyx_t_5numpy_uint8_t;
  */
 typedef npy_uint16 __pyx_t_5numpy_uint16_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":706
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":706
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t             # <<<<<<<<<<<<<<
@@ -1073,7 +1073,7 @@ typedef npy_uint16 __pyx_t_5numpy_uint16_t;
  */
 typedef npy_uint32 __pyx_t_5numpy_uint32_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":707
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":707
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t
  * ctypedef npy_uint64     uint64_t             # <<<<<<<<<<<<<<
@@ -1082,7 +1082,7 @@ typedef npy_uint32 __pyx_t_5numpy_uint32_t;
  */
 typedef npy_uint64 __pyx_t_5numpy_uint64_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":711
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":711
  * #ctypedef npy_uint128    uint128_t
  * 
  * ctypedef npy_float32    float32_t             # <<<<<<<<<<<<<<
@@ -1091,7 +1091,7 @@ typedef npy_uint64 __pyx_t_5numpy_uint64_t;
  */
 typedef npy_float32 __pyx_t_5numpy_float32_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":712
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":712
  * 
  * ctypedef npy_float32    float32_t
  * ctypedef npy_float64    float64_t             # <<<<<<<<<<<<<<
@@ -1100,7 +1100,7 @@ typedef npy_float32 __pyx_t_5numpy_float32_t;
  */
 typedef npy_float64 __pyx_t_5numpy_float64_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":721
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":721
  * # The int types are mapped a bit surprising --
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t             # <<<<<<<<<<<<<<
@@ -1109,7 +1109,7 @@ typedef npy_float64 __pyx_t_5numpy_float64_t;
  */
 typedef npy_long __pyx_t_5numpy_int_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":722
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":722
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t             # <<<<<<<<<<<<<<
@@ -1118,7 +1118,7 @@ typedef npy_long __pyx_t_5numpy_int_t;
  */
 typedef npy_longlong __pyx_t_5numpy_long_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":723
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":723
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t
  * ctypedef npy_longlong   longlong_t             # <<<<<<<<<<<<<<
@@ -1127,7 +1127,7 @@ typedef npy_longlong __pyx_t_5numpy_long_t;
  */
 typedef npy_longlong __pyx_t_5numpy_longlong_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":725
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":725
  * ctypedef npy_longlong   longlong_t
  * 
  * ctypedef npy_ulong      uint_t             # <<<<<<<<<<<<<<
@@ -1136,7 +1136,7 @@ typedef npy_longlong __pyx_t_5numpy_longlong_t;
  */
 typedef npy_ulong __pyx_t_5numpy_uint_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":726
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":726
  * 
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t             # <<<<<<<<<<<<<<
@@ -1145,7 +1145,7 @@ typedef npy_ulong __pyx_t_5numpy_uint_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":727
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":727
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t
  * ctypedef npy_ulonglong  ulonglong_t             # <<<<<<<<<<<<<<
@@ -1154,7 +1154,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":729
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":729
  * ctypedef npy_ulonglong  ulonglong_t
  * 
  * ctypedef npy_intp       intp_t             # <<<<<<<<<<<<<<
@@ -1163,7 +1163,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
  */
 typedef npy_intp __pyx_t_5numpy_intp_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":730
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":730
  * 
  * ctypedef npy_intp       intp_t
  * ctypedef npy_uintp      uintp_t             # <<<<<<<<<<<<<<
@@ -1172,7 +1172,7 @@ typedef npy_intp __pyx_t_5numpy_intp_t;
  */
 typedef npy_uintp __pyx_t_5numpy_uintp_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":732
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":732
  * ctypedef npy_uintp      uintp_t
  * 
  * ctypedef npy_double     float_t             # <<<<<<<<<<<<<<
@@ -1181,7 +1181,7 @@ typedef npy_uintp __pyx_t_5numpy_uintp_t;
  */
 typedef npy_double __pyx_t_5numpy_float_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":733
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":733
  * 
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t             # <<<<<<<<<<<<<<
@@ -1190,7 +1190,7 @@ typedef npy_double __pyx_t_5numpy_float_t;
  */
 typedef npy_double __pyx_t_5numpy_double_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":734
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":734
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t
  * ctypedef npy_longdouble longdouble_t             # <<<<<<<<<<<<<<
@@ -1247,7 +1247,7 @@ struct __pyx_MemviewEnum_obj;
 struct __pyx_memoryview_obj;
 struct __pyx_memoryviewslice_obj;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":736
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":736
  * ctypedef npy_longdouble longdouble_t
  * 
  * ctypedef npy_cfloat      cfloat_t             # <<<<<<<<<<<<<<
@@ -1256,7 +1256,7 @@ struct __pyx_memoryviewslice_obj;
  */
 typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":737
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":737
  * 
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t             # <<<<<<<<<<<<<<
@@ -1265,7 +1265,7 @@ typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
  */
 typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":738
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":738
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t
  * ctypedef npy_clongdouble clongdouble_t             # <<<<<<<<<<<<<<
@@ -1274,7 +1274,7 @@ typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
  */
 typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":740
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":740
  * ctypedef npy_clongdouble clongdouble_t
  * 
  * ctypedef npy_cdouble     complex_t             # <<<<<<<<<<<<<<
@@ -2651,12 +2651,10 @@ static const char __pyx_k_strided_and_indirect[] = "<strided and indirect>";
 static const char __pyx_k_water_map_OH_stretch[] = "water_map_OH_stretch";
 static const char __pyx_k_Entering_water_module[] = " ... Entering water module ... \n";
 static const char __pyx_k_contiguous_and_direct[] = "<contiguous and direct>";
-static const char __pyx_k_data_models_water_map[] = "../data/models/water.map";
 static const char __pyx_k_Calculation_type_Raman[] = " Calculation type: Raman \n";
 static const char __pyx_k_MemoryView_of_r_object[] = "<MemoryView of %r object>";
 static const char __pyx_k_MemoryView_of_r_at_0x_x[] = "<MemoryView of %r at 0x%x>";
 static const char __pyx_k_contiguous_and_indirect[] = "<contiguous and indirect>";
-static const char __pyx_k_data_models_water_model[] = "../data/models/water.model";
 static const char __pyx_k_print_map_water_stretch[] = "print_map_water_stretch";
 static const char __pyx_k_Cannot_index_with_type_s[] = "Cannot index with type '%s'";
 static const char __pyx_k_Fermi_coupling_4_2f_cm_1[] = " Fermi coupling %4.2f cm^{-1} \n";
@@ -2671,6 +2669,7 @@ static const char __pyx_k_Chromophore_type_HOH_bend_overt[] = " Chromophore type
 static const char __pyx_k_Chromophore_type_OH_stretch_fun[] = " Chromophore type: OH stretch fundamental \n";
 static const char __pyx_k_numpy_core_multiarray_failed_to[] = "numpy.core.multiarray failed to import";
 static const char __pyx_k_unknown_dtype_code_in_numpy_pxd[] = "unknown dtype code in numpy.pxd (%d)";
+static const char __pyx_k_work_akanane_sw_spectroscopy_da[] = "/work/akanane/sw/spectroscopy/data/models/water.model";
 static const char __pyx_k_Buffer_view_does_not_expose_stri[] = "Buffer view does not expose strides";
 static const char __pyx_k_Can_only_create_a_buffer_that_is[] = "Can only create a buffer that is contiguous in memory.";
 static const char __pyx_k_Cannot_assign_to_read_only_memor[] = "Cannot assign to read-only memoryview";
@@ -2689,6 +2688,7 @@ static const char __pyx_k_no_default___reduce___due_to_non[] = "no default __red
 static const char __pyx_k_numpy_core_umath_failed_to_impor[] = "numpy.core.umath failed to import";
 static const char __pyx_k_unable_to_allocate_shape_and_str[] = "unable to allocate shape and strides.";
 static const char __pyx_k_Chromophore_type_OH_stretch_fun_2[] = " Chromophore type: OH stretch fundamental uncoupled \n";
+static const char __pyx_k_work_akanane_sw_spectroscopy_da_2[] = "/work/akanane/sw/spectroscopy/data/models/water.map";
 static const char __pyx_k_Format_string_allocated_too_shor_2[] = "Format string allocated too short.";
 static const char __pyx_k_No_value_specified_for_struct_at_2[] = "No value specified for struct attribute 'w10_1'";
 static const char __pyx_k_No_value_specified_for_struct_at_3[] = "No value specified for struct attribute 'w10_2'";
@@ -2830,8 +2830,6 @@ static PyObject *__pyx_n_u_correlation_time;
 static PyObject *__pyx_n_s_cset;
 static PyObject *__pyx_n_s_ctime;
 static PyObject *__pyx_n_s_cwm;
-static PyObject *__pyx_kp_u_data_models_water_map;
-static PyObject *__pyx_kp_u_data_models_water_model;
 static PyObject *__pyx_n_s_dict;
 static PyObject *__pyx_n_s_dt;
 static PyObject *__pyx_n_u_dt;
@@ -3027,6 +3025,8 @@ static PyObject *__pyx_n_u_water_map_OH_stretch;
 static PyObject *__pyx_n_u_water_model;
 static PyObject *__pyx_n_s_wm;
 static PyObject *__pyx_n_s_wmodels;
+static PyObject *__pyx_kp_u_work_akanane_sw_spectroscopy_da;
+static PyObject *__pyx_kp_u_work_akanane_sw_spectroscopy_da_2;
 static PyObject *__pyx_n_s_ww0;
 static PyObject *__pyx_n_s_x;
 static PyObject *__pyx_n_s_x10;
@@ -3585,7 +3585,7 @@ static PyObject *__pyx_pf_5water_run(CYTHON_UNUSED PyObject *__pyx_self, PyObjec
   /* "water.pyx":97
  *    #
  *    #-------------------------------------------------------------------------
- *    with open("../data/models/water.model") as json_file:             # <<<<<<<<<<<<<<
+ *    with open("/work/akanane/sw/spectroscopy/data/models/water.model") as json_file:             # <<<<<<<<<<<<<<
  *       wmodels = json.load(json_file)
  * 
  */
@@ -3628,7 +3628,7 @@ static PyObject *__pyx_pf_5water_run(CYTHON_UNUSED PyObject *__pyx_self, PyObjec
 
           /* "water.pyx":98
  *    #-------------------------------------------------------------------------
- *    with open("../data/models/water.model") as json_file:
+ *    with open("/work/akanane/sw/spectroscopy/data/models/water.model") as json_file:
  *       wmodels = json.load(json_file)             # <<<<<<<<<<<<<<
  * 
  *    wm = j['models']['water_model']
@@ -3659,7 +3659,7 @@ static PyObject *__pyx_pf_5water_run(CYTHON_UNUSED PyObject *__pyx_self, PyObjec
           /* "water.pyx":97
  *    #
  *    #-------------------------------------------------------------------------
- *    with open("../data/models/water.model") as json_file:             # <<<<<<<<<<<<<<
+ *    with open("/work/akanane/sw/spectroscopy/data/models/water.model") as json_file:             # <<<<<<<<<<<<<<
  *       wmodels = json.load(json_file)
  * 
  */
@@ -4279,7 +4279,7 @@ static PyObject *__pyx_pf_5water_run(CYTHON_UNUSED PyObject *__pyx_self, PyObjec
   /* "water.pyx":145
  *    # Loading all spectroscopic maps
  *    #--------------------------------------------------------------------------
- *    with open("../data/models/water.map") as json_file:             # <<<<<<<<<<<<<<
+ *    with open("/work/akanane/sw/spectroscopy/data/models/water.map") as json_file:             # <<<<<<<<<<<<<<
  *       maps = json.load(json_file)
  * 
  */
@@ -4322,7 +4322,7 @@ static PyObject *__pyx_pf_5water_run(CYTHON_UNUSED PyObject *__pyx_self, PyObjec
 
           /* "water.pyx":146
  *    #--------------------------------------------------------------------------
- *    with open("../data/models/water.map") as json_file:
+ *    with open("/work/akanane/sw/spectroscopy/data/models/water.map") as json_file:
  *       maps = json.load(json_file)             # <<<<<<<<<<<<<<
  * 
  *    #--------------------------------------------------------------------------
@@ -4353,7 +4353,7 @@ static PyObject *__pyx_pf_5water_run(CYTHON_UNUSED PyObject *__pyx_self, PyObjec
           /* "water.pyx":145
  *    # Loading all spectroscopic maps
  *    #--------------------------------------------------------------------------
- *    with open("../data/models/water.map") as json_file:             # <<<<<<<<<<<<<<
+ *    with open("/work/akanane/sw/spectroscopy/data/models/water.map") as json_file:             # <<<<<<<<<<<<<<
  *       maps = json.load(json_file)
  * 
  */
@@ -13107,7 +13107,7 @@ static void __pyx_f_5water_water_OH_intermolecular_coup(__Pyx_memviewslice __pyx
   __pyx_L0:;
 }
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":742
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":742
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -13124,7 +13124,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew1", 0);
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":743
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":743
  * 
  * cdef inline object PyArray_MultiIterNew1(a):
  *     return PyArray_MultiIterNew(1, <void*>a)             # <<<<<<<<<<<<<<
@@ -13138,7 +13138,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":742
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":742
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -13157,7 +13157,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":745
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":745
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -13174,7 +13174,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew2", 0);
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":746
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":746
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)             # <<<<<<<<<<<<<<
@@ -13188,7 +13188,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":745
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":745
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -13207,7 +13207,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":748
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":748
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -13224,7 +13224,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew3", 0);
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":749
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":749
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)             # <<<<<<<<<<<<<<
@@ -13238,7 +13238,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":748
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":748
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -13257,7 +13257,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":751
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":751
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -13274,7 +13274,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew4", 0);
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":752
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":752
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)             # <<<<<<<<<<<<<<
@@ -13288,7 +13288,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":751
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":751
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -13307,7 +13307,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":754
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":754
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -13324,7 +13324,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew5", 0);
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":755
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":755
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)             # <<<<<<<<<<<<<<
@@ -13338,7 +13338,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":754
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":754
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -13357,7 +13357,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":757
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":757
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -13371,7 +13371,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("PyDataType_SHAPE", 0);
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":758
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":758
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -13381,7 +13381,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   __pyx_t_1 = (PyDataType_HASSUBARRAY(__pyx_v_d) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":759
+    /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":759
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):
  *         return <tuple>d.subarray.shape             # <<<<<<<<<<<<<<
@@ -13393,7 +13393,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     __pyx_r = ((PyObject*)__pyx_v_d->subarray->shape);
     goto __pyx_L0;
 
-    /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":758
+    /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":758
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -13402,7 +13402,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
  */
   }
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":761
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":761
  *         return <tuple>d.subarray.shape
  *     else:
  *         return ()             # <<<<<<<<<<<<<<
@@ -13416,7 +13416,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     goto __pyx_L0;
   }
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":757
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":757
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -13431,7 +13431,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   return __pyx_r;
 }
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":763
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":763
  *         return ()
  * 
  * cdef inline char* _util_dtypestring(dtype descr, char* f, char* end, int* offset) except NULL:             # <<<<<<<<<<<<<<
@@ -13463,7 +13463,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_util_dtypestring", 0);
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":768
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":768
  * 
  *     cdef dtype child
  *     cdef int endian_detector = 1             # <<<<<<<<<<<<<<
@@ -13472,7 +13472,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
   __pyx_v_endian_detector = 1;
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":769
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":769
  *     cdef dtype child
  *     cdef int endian_detector = 1
  *     cdef bint little_endian = ((<char*>&endian_detector)[0] != 0)             # <<<<<<<<<<<<<<
@@ -13481,7 +13481,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
   __pyx_v_little_endian = ((((char *)(&__pyx_v_endian_detector))[0]) != 0);
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":772
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":772
  *     cdef tuple fields
  * 
  *     for childname in descr.names:             # <<<<<<<<<<<<<<
@@ -13504,7 +13504,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __Pyx_XDECREF_SET(__pyx_v_childname, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":773
+    /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":773
  * 
  *     for childname in descr.names:
  *         fields = descr.fields[childname]             # <<<<<<<<<<<<<<
@@ -13521,7 +13521,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __Pyx_XDECREF_SET(__pyx_v_fields, ((PyObject*)__pyx_t_3));
     __pyx_t_3 = 0;
 
-    /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":774
+    /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":774
  *     for childname in descr.names:
  *         fields = descr.fields[childname]
  *         child, new_offset = fields             # <<<<<<<<<<<<<<
@@ -13556,7 +13556,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __Pyx_XDECREF_SET(__pyx_v_new_offset, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":776
+    /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":776
  *         child, new_offset = fields
  * 
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:             # <<<<<<<<<<<<<<
@@ -13573,7 +13573,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __pyx_t_6 = ((((__pyx_v_end - __pyx_v_f) - ((int)__pyx_t_5)) < 15) != 0);
     if (unlikely(__pyx_t_6)) {
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":777
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":777
  * 
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")             # <<<<<<<<<<<<<<
@@ -13586,7 +13586,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __PYX_ERR(1, 777, __pyx_L1_error)
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":776
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":776
  *         child, new_offset = fields
  * 
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:             # <<<<<<<<<<<<<<
@@ -13595,7 +13595,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
     }
 
-    /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":779
+    /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":779
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")
  * 
  *         if ((child.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -13615,7 +13615,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     }
     __pyx_L8_next_or:;
 
-    /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":780
+    /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":780
  * 
  *         if ((child.byteorder == c'>' and little_endian) or
  *             (child.byteorder == c'<' and not little_endian)):             # <<<<<<<<<<<<<<
@@ -13632,7 +13632,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __pyx_t_6 = __pyx_t_7;
     __pyx_L7_bool_binop_done:;
 
-    /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":779
+    /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":779
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")
  * 
  *         if ((child.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -13641,7 +13641,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
     if (unlikely(__pyx_t_6)) {
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":781
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":781
  *         if ((child.byteorder == c'>' and little_endian) or
  *             (child.byteorder == c'<' and not little_endian)):
  *             raise ValueError(u"Non-native byte order not supported")             # <<<<<<<<<<<<<<
@@ -13654,7 +13654,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __PYX_ERR(1, 781, __pyx_L1_error)
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":779
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":779
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")
  * 
  *         if ((child.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -13663,7 +13663,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
     }
 
-    /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":791
+    /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":791
  * 
  *         # Output padding bytes
  *         while offset[0] < new_offset:             # <<<<<<<<<<<<<<
@@ -13679,7 +13679,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       if (!__pyx_t_6) break;
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":792
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":792
  *         # Output padding bytes
  *         while offset[0] < new_offset:
  *             f[0] = 120 # "x"; pad byte             # <<<<<<<<<<<<<<
@@ -13688,7 +13688,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
       (__pyx_v_f[0]) = 0x78;
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":793
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":793
  *         while offset[0] < new_offset:
  *             f[0] = 120 # "x"; pad byte
  *             f += 1             # <<<<<<<<<<<<<<
@@ -13697,7 +13697,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
       __pyx_v_f = (__pyx_v_f + 1);
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":794
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":794
  *             f[0] = 120 # "x"; pad byte
  *             f += 1
  *             offset[0] += 1             # <<<<<<<<<<<<<<
@@ -13708,7 +13708,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       (__pyx_v_offset[__pyx_t_8]) = ((__pyx_v_offset[__pyx_t_8]) + 1);
     }
 
-    /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":796
+    /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":796
  *             offset[0] += 1
  * 
  *         offset[0] += child.itemsize             # <<<<<<<<<<<<<<
@@ -13718,7 +13718,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __pyx_t_8 = 0;
     (__pyx_v_offset[__pyx_t_8]) = ((__pyx_v_offset[__pyx_t_8]) + __pyx_v_child->elsize);
 
-    /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":798
+    /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":798
  *         offset[0] += child.itemsize
  * 
  *         if not PyDataType_HASFIELDS(child):             # <<<<<<<<<<<<<<
@@ -13728,7 +13728,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __pyx_t_6 = ((!(PyDataType_HASFIELDS(__pyx_v_child) != 0)) != 0);
     if (__pyx_t_6) {
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":799
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":799
  * 
  *         if not PyDataType_HASFIELDS(child):
  *             t = child.type_num             # <<<<<<<<<<<<<<
@@ -13740,7 +13740,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __Pyx_XDECREF_SET(__pyx_v_t, __pyx_t_4);
       __pyx_t_4 = 0;
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":800
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":800
  *         if not PyDataType_HASFIELDS(child):
  *             t = child.type_num
  *             if end - f < 5:             # <<<<<<<<<<<<<<
@@ -13750,7 +13750,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __pyx_t_6 = (((__pyx_v_end - __pyx_v_f) < 5) != 0);
       if (unlikely(__pyx_t_6)) {
 
-        /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":801
+        /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":801
  *             t = child.type_num
  *             if end - f < 5:
  *                 raise RuntimeError(u"Format string allocated too short.")             # <<<<<<<<<<<<<<
@@ -13763,7 +13763,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __PYX_ERR(1, 801, __pyx_L1_error)
 
-        /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":800
+        /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":800
  *         if not PyDataType_HASFIELDS(child):
  *             t = child.type_num
  *             if end - f < 5:             # <<<<<<<<<<<<<<
@@ -13772,7 +13772,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
       }
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":804
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":804
  * 
  *             # Until ticket #99 is fixed, use integers to avoid warnings
  *             if   t == NPY_BYTE:        f[0] =  98 #"b"             # <<<<<<<<<<<<<<
@@ -13790,7 +13790,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":805
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":805
  *             # Until ticket #99 is fixed, use integers to avoid warnings
  *             if   t == NPY_BYTE:        f[0] =  98 #"b"
  *             elif t == NPY_UBYTE:       f[0] =  66 #"B"             # <<<<<<<<<<<<<<
@@ -13808,7 +13808,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":806
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":806
  *             if   t == NPY_BYTE:        f[0] =  98 #"b"
  *             elif t == NPY_UBYTE:       f[0] =  66 #"B"
  *             elif t == NPY_SHORT:       f[0] = 104 #"h"             # <<<<<<<<<<<<<<
@@ -13826,7 +13826,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":807
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":807
  *             elif t == NPY_UBYTE:       f[0] =  66 #"B"
  *             elif t == NPY_SHORT:       f[0] = 104 #"h"
  *             elif t == NPY_USHORT:      f[0] =  72 #"H"             # <<<<<<<<<<<<<<
@@ -13844,7 +13844,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":808
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":808
  *             elif t == NPY_SHORT:       f[0] = 104 #"h"
  *             elif t == NPY_USHORT:      f[0] =  72 #"H"
  *             elif t == NPY_INT:         f[0] = 105 #"i"             # <<<<<<<<<<<<<<
@@ -13862,7 +13862,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":809
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":809
  *             elif t == NPY_USHORT:      f[0] =  72 #"H"
  *             elif t == NPY_INT:         f[0] = 105 #"i"
  *             elif t == NPY_UINT:        f[0] =  73 #"I"             # <<<<<<<<<<<<<<
@@ -13880,7 +13880,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":810
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":810
  *             elif t == NPY_INT:         f[0] = 105 #"i"
  *             elif t == NPY_UINT:        f[0] =  73 #"I"
  *             elif t == NPY_LONG:        f[0] = 108 #"l"             # <<<<<<<<<<<<<<
@@ -13898,7 +13898,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":811
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":811
  *             elif t == NPY_UINT:        f[0] =  73 #"I"
  *             elif t == NPY_LONG:        f[0] = 108 #"l"
  *             elif t == NPY_ULONG:       f[0] = 76  #"L"             # <<<<<<<<<<<<<<
@@ -13916,7 +13916,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":812
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":812
  *             elif t == NPY_LONG:        f[0] = 108 #"l"
  *             elif t == NPY_ULONG:       f[0] = 76  #"L"
  *             elif t == NPY_LONGLONG:    f[0] = 113 #"q"             # <<<<<<<<<<<<<<
@@ -13934,7 +13934,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":813
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":813
  *             elif t == NPY_ULONG:       f[0] = 76  #"L"
  *             elif t == NPY_LONGLONG:    f[0] = 113 #"q"
  *             elif t == NPY_ULONGLONG:   f[0] = 81  #"Q"             # <<<<<<<<<<<<<<
@@ -13952,7 +13952,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":814
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":814
  *             elif t == NPY_LONGLONG:    f[0] = 113 #"q"
  *             elif t == NPY_ULONGLONG:   f[0] = 81  #"Q"
  *             elif t == NPY_FLOAT:       f[0] = 102 #"f"             # <<<<<<<<<<<<<<
@@ -13970,7 +13970,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":815
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":815
  *             elif t == NPY_ULONGLONG:   f[0] = 81  #"Q"
  *             elif t == NPY_FLOAT:       f[0] = 102 #"f"
  *             elif t == NPY_DOUBLE:      f[0] = 100 #"d"             # <<<<<<<<<<<<<<
@@ -13988,7 +13988,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":816
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":816
  *             elif t == NPY_FLOAT:       f[0] = 102 #"f"
  *             elif t == NPY_DOUBLE:      f[0] = 100 #"d"
  *             elif t == NPY_LONGDOUBLE:  f[0] = 103 #"g"             # <<<<<<<<<<<<<<
@@ -14006,7 +14006,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":817
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":817
  *             elif t == NPY_DOUBLE:      f[0] = 100 #"d"
  *             elif t == NPY_LONGDOUBLE:  f[0] = 103 #"g"
  *             elif t == NPY_CFLOAT:      f[0] = 90; f[1] = 102; f += 1 # Zf             # <<<<<<<<<<<<<<
@@ -14026,7 +14026,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":818
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":818
  *             elif t == NPY_LONGDOUBLE:  f[0] = 103 #"g"
  *             elif t == NPY_CFLOAT:      f[0] = 90; f[1] = 102; f += 1 # Zf
  *             elif t == NPY_CDOUBLE:     f[0] = 90; f[1] = 100; f += 1 # Zd             # <<<<<<<<<<<<<<
@@ -14046,7 +14046,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":819
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":819
  *             elif t == NPY_CFLOAT:      f[0] = 90; f[1] = 102; f += 1 # Zf
  *             elif t == NPY_CDOUBLE:     f[0] = 90; f[1] = 100; f += 1 # Zd
  *             elif t == NPY_CLONGDOUBLE: f[0] = 90; f[1] = 103; f += 1 # Zg             # <<<<<<<<<<<<<<
@@ -14066,7 +14066,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":820
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":820
  *             elif t == NPY_CDOUBLE:     f[0] = 90; f[1] = 100; f += 1 # Zd
  *             elif t == NPY_CLONGDOUBLE: f[0] = 90; f[1] = 103; f += 1 # Zg
  *             elif t == NPY_OBJECT:      f[0] = 79 #"O"             # <<<<<<<<<<<<<<
@@ -14084,7 +14084,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":822
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":822
  *             elif t == NPY_OBJECT:      f[0] = 79 #"O"
  *             else:
  *                 raise ValueError(u"unknown dtype code in numpy.pxd (%d)" % t)             # <<<<<<<<<<<<<<
@@ -14103,7 +14103,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       }
       __pyx_L15:;
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":823
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":823
  *             else:
  *                 raise ValueError(u"unknown dtype code in numpy.pxd (%d)" % t)
  *             f += 1             # <<<<<<<<<<<<<<
@@ -14112,7 +14112,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
       __pyx_v_f = (__pyx_v_f + 1);
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":798
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":798
  *         offset[0] += child.itemsize
  * 
  *         if not PyDataType_HASFIELDS(child):             # <<<<<<<<<<<<<<
@@ -14122,7 +14122,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       goto __pyx_L13;
     }
 
-    /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":827
+    /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":827
  *             # Cython ignores struct boundary information ("T{...}"),
  *             # so don't output it
  *             f = _util_dtypestring(child, f, end, offset)             # <<<<<<<<<<<<<<
@@ -14135,7 +14135,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     }
     __pyx_L13:;
 
-    /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":772
+    /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":772
  *     cdef tuple fields
  * 
  *     for childname in descr.names:             # <<<<<<<<<<<<<<
@@ -14145,7 +14145,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":828
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":828
  *             # so don't output it
  *             f = _util_dtypestring(child, f, end, offset)
  *     return f             # <<<<<<<<<<<<<<
@@ -14155,7 +14155,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
   __pyx_r = __pyx_v_f;
   goto __pyx_L0;
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":763
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":763
  *         return ()
  * 
  * cdef inline char* _util_dtypestring(dtype descr, char* f, char* end, int* offset) except NULL:             # <<<<<<<<<<<<<<
@@ -14180,7 +14180,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
   return __pyx_r;
 }
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":943
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":943
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -14192,7 +14192,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("set_array_base", 0);
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":944
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":944
  * 
  * cdef inline void set_array_base(ndarray arr, object base):
  *     Py_INCREF(base) # important to do this before stealing the reference below!             # <<<<<<<<<<<<<<
@@ -14201,7 +14201,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   Py_INCREF(__pyx_v_base);
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":945
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":945
  * cdef inline void set_array_base(ndarray arr, object base):
  *     Py_INCREF(base) # important to do this before stealing the reference below!
  *     PyArray_SetBaseObject(arr, base)             # <<<<<<<<<<<<<<
@@ -14210,7 +14210,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   (void)(PyArray_SetBaseObject(__pyx_v_arr, __pyx_v_base));
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":943
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":943
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -14222,7 +14222,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __Pyx_RefNannyFinishContext();
 }
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":947
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":947
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -14237,7 +14237,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("get_array_base", 0);
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":948
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":948
  * 
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)             # <<<<<<<<<<<<<<
@@ -14246,7 +14246,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   __pyx_v_base = PyArray_BASE(__pyx_v_arr);
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":949
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":949
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -14256,7 +14256,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_t_1 = ((__pyx_v_base == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":950
+    /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":950
  *     base = PyArray_BASE(arr)
  *     if base is NULL:
  *         return None             # <<<<<<<<<<<<<<
@@ -14267,7 +14267,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":949
+    /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":949
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -14276,7 +14276,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   }
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":951
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":951
  *     if base is NULL:
  *         return None
  *     return <object>base             # <<<<<<<<<<<<<<
@@ -14288,7 +14288,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_r = ((PyObject *)__pyx_v_base);
   goto __pyx_L0;
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":947
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":947
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -14303,7 +14303,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   return __pyx_r;
 }
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":955
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":955
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -14327,7 +14327,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_array", 0);
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":956
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":956
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -14343,7 +14343,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":957
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":957
  * cdef inline int import_array() except -1:
  *     try:
  *         __pyx_import_array()             # <<<<<<<<<<<<<<
@@ -14352,7 +14352,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
  */
       __pyx_t_4 = _import_array(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(1, 957, __pyx_L3_error)
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":956
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":956
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -14366,7 +14366,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":958
+    /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":958
  *     try:
  *         __pyx_import_array()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -14381,7 +14381,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":959
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":959
  *         __pyx_import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -14397,7 +14397,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":956
+    /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":956
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -14412,7 +14412,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":955
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":955
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -14435,7 +14435,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   return __pyx_r;
 }
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":961
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":961
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -14459,7 +14459,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_umath", 0);
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":962
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":962
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -14475,7 +14475,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":963
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":963
  * cdef inline int import_umath() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -14484,7 +14484,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(1, 963, __pyx_L3_error)
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":962
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":962
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -14498,7 +14498,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":964
+    /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":964
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -14513,7 +14513,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":965
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":965
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -14529,7 +14529,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":962
+    /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":962
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -14544,7 +14544,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":961
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":961
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -14567,7 +14567,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   return __pyx_r;
 }
 
-/* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":967
+/* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":967
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -14591,7 +14591,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_ufunc", 0);
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":968
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":968
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -14607,7 +14607,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":969
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":969
  * cdef inline int import_ufunc() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -14616,7 +14616,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(1, 969, __pyx_L3_error)
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":968
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":968
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -14630,7 +14630,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":970
+    /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":970
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -14645,7 +14645,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":971
+      /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":971
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -14661,7 +14661,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":968
+    /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":968
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -14676,7 +14676,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":967
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":967
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -32632,8 +32632,6 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_cset, __pyx_k_cset, sizeof(__pyx_k_cset), 0, 0, 1, 1},
   {&__pyx_n_s_ctime, __pyx_k_ctime, sizeof(__pyx_k_ctime), 0, 0, 1, 1},
   {&__pyx_n_s_cwm, __pyx_k_cwm, sizeof(__pyx_k_cwm), 0, 0, 1, 1},
-  {&__pyx_kp_u_data_models_water_map, __pyx_k_data_models_water_map, sizeof(__pyx_k_data_models_water_map), 0, 1, 0, 0},
-  {&__pyx_kp_u_data_models_water_model, __pyx_k_data_models_water_model, sizeof(__pyx_k_data_models_water_model), 0, 1, 0, 0},
   {&__pyx_n_s_dict, __pyx_k_dict, sizeof(__pyx_k_dict), 0, 0, 1, 1},
   {&__pyx_n_s_dt, __pyx_k_dt, sizeof(__pyx_k_dt), 0, 0, 1, 1},
   {&__pyx_n_u_dt, __pyx_k_dt, sizeof(__pyx_k_dt), 0, 1, 0, 1},
@@ -32829,6 +32827,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_u_water_model, __pyx_k_water_model, sizeof(__pyx_k_water_model), 0, 1, 0, 1},
   {&__pyx_n_s_wm, __pyx_k_wm, sizeof(__pyx_k_wm), 0, 0, 1, 1},
   {&__pyx_n_s_wmodels, __pyx_k_wmodels, sizeof(__pyx_k_wmodels), 0, 0, 1, 1},
+  {&__pyx_kp_u_work_akanane_sw_spectroscopy_da, __pyx_k_work_akanane_sw_spectroscopy_da, sizeof(__pyx_k_work_akanane_sw_spectroscopy_da), 0, 1, 0, 0},
+  {&__pyx_kp_u_work_akanane_sw_spectroscopy_da_2, __pyx_k_work_akanane_sw_spectroscopy_da_2, sizeof(__pyx_k_work_akanane_sw_spectroscopy_da_2), 0, 1, 0, 0},
   {&__pyx_n_s_ww0, __pyx_k_ww0, sizeof(__pyx_k_ww0), 0, 0, 1, 1},
   {&__pyx_n_s_x, __pyx_k_x, sizeof(__pyx_k_x), 0, 0, 1, 1},
   {&__pyx_n_s_x10, __pyx_k_x10, sizeof(__pyx_k_x10), 0, 0, 1, 1},
@@ -32877,11 +32877,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "water.pyx":97
  *    #
  *    #-------------------------------------------------------------------------
- *    with open("../data/models/water.model") as json_file:             # <<<<<<<<<<<<<<
+ *    with open("/work/akanane/sw/spectroscopy/data/models/water.model") as json_file:             # <<<<<<<<<<<<<<
  *       wmodels = json.load(json_file)
  * 
  */
-  __pyx_tuple__2 = PyTuple_Pack(1, __pyx_kp_u_data_models_water_model); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 97, __pyx_L1_error)
+  __pyx_tuple__2 = PyTuple_Pack(1, __pyx_kp_u_work_akanane_sw_spectroscopy_da); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 97, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
   __pyx_tuple__3 = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 97, __pyx_L1_error)
@@ -32891,11 +32891,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "water.pyx":145
  *    # Loading all spectroscopic maps
  *    #--------------------------------------------------------------------------
- *    with open("../data/models/water.map") as json_file:             # <<<<<<<<<<<<<<
+ *    with open("/work/akanane/sw/spectroscopy/data/models/water.map") as json_file:             # <<<<<<<<<<<<<<
  *       maps = json.load(json_file)
  * 
  */
-  __pyx_tuple__4 = PyTuple_Pack(1, __pyx_kp_u_data_models_water_map); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 145, __pyx_L1_error)
+  __pyx_tuple__4 = PyTuple_Pack(1, __pyx_kp_u_work_akanane_sw_spectroscopy_da_2); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
 
@@ -33020,7 +33020,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__15);
   __Pyx_GIVEREF(__pyx_tuple__15);
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":777
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":777
  * 
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")             # <<<<<<<<<<<<<<
@@ -33031,7 +33031,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__16);
   __Pyx_GIVEREF(__pyx_tuple__16);
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":781
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":781
  *         if ((child.byteorder == c'>' and little_endian) or
  *             (child.byteorder == c'<' and not little_endian)):
  *             raise ValueError(u"Non-native byte order not supported")             # <<<<<<<<<<<<<<
@@ -33042,7 +33042,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__17);
   __Pyx_GIVEREF(__pyx_tuple__17);
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":801
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":801
  *             t = child.type_num
  *             if end - f < 5:
  *                 raise RuntimeError(u"Format string allocated too short.")             # <<<<<<<<<<<<<<
@@ -33053,7 +33053,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__18);
   __Pyx_GIVEREF(__pyx_tuple__18);
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":959
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":959
  *         __pyx_import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -33064,7 +33064,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__19);
   __Pyx_GIVEREF(__pyx_tuple__19);
 
-  /* "../../../work/akanane/sw/python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":965
+  /* "../python/20200808-spec/lib/python3.8/site-packages/numpy/__init__.pxd":965
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<

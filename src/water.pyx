@@ -94,7 +94,7 @@ def run(traj, j):
    # load water model
    #
    #-------------------------------------------------------------------------
-   with open("../data/models/water.model") as json_file:
+   with open("/work/akanane/sw/spectroscopy/data/models/water.model") as json_file:
       wmodels = json.load(json_file)
    
    wm = j['models']['water_model']
@@ -142,7 +142,7 @@ def run(traj, j):
    #--------------------------------------------------------------------------
    # Loading all spectroscopic maps
    #--------------------------------------------------------------------------
-   with open("../data/models/water.map") as json_file:
+   with open("/work/akanane/sw/spectroscopy/data/models/water.map") as json_file:
       maps = json.load(json_file) 
 
    #--------------------------------------------------------------------------
