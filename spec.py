@@ -12,7 +12,7 @@ sys.path.insert(0, os.path.join(pwd,"src"))
 
 import water
 
-def main(input_file):
+def run(input_file):
    #---------------------------------------------------------------
    #
    # start:
@@ -163,4 +163,4 @@ def main(input_file):
    print (" Time elapsed (hh:mm:ss.ms) {} \n".format(time_elapsed))
 
 if __name__ == "__main__":
-   main()
+   run(sys.argv)

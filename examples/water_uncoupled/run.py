@@ -4,4 +4,4 @@ sys.path.insert(0, "/work/akanane/sw/spectroscopy/")
 import spec
 
 input_file = "input_stretch_unc.json"
-spec.main(input_file)
+spec.run(input_file)
