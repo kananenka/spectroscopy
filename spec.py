@@ -7,8 +7,14 @@ from pathlib import Path
 import numpy as np
 import mdtraj as md  # read xtc files
 
-pwd = "/work/akanane/sw/spectroscopy"
-sys.path.insert(0, os.path.join(pwd,"src"))
+#pwd = "/work/akanane/sw/spectroscopy"
+#sys.path.insert(0, os.path.join(pwd,"src"))
+
+c_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(c_dir,"src"))
+
+#ipath = os.path.abspath(os.path.dirname(os.path.abspath(__file__))) + "./src"
+#sys.path.insert(0, ipath)
 
 import water
 

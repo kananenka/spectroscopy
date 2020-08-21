@@ -1,6 +1,7 @@
 # cython: language_level=3, boundscheck=False, cdivision=True
 # distutils: language=c++
 #import cython
+import os
 
 import numpy as np
 cimport numpy as np
@@ -94,7 +95,10 @@ def run(traj, j):
    # load water model
    #
    #-------------------------------------------------------------------------
-   with open("/work/akanane/sw/spectroscopy/data/models/water.model") as json_file:
+   filep = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data/models/water.model'))
+
+   #with open("/work/akanane/sw/spectroscopy/data/models/water.model") as json_file:
+   with open(filep) as json_file:
       wmodels = json.load(json_file)
    
    wm = j['models']['water_model']
@@ -142,7 +146,9 @@ def run(traj, j):
    #--------------------------------------------------------------------------
    # Loading all spectroscopic maps
    #--------------------------------------------------------------------------
-   with open("/work/akanane/sw/spectroscopy/data/models/water.map") as json_file:
+   filep = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data/models/water.map'))
+   #with open("/work/akanane/sw/spectroscopy/data/models/water.map") as json_file:
+   with open(filep) as json_file:
       maps = json.load(json_file) 
 
    #--------------------------------------------------------------------------
