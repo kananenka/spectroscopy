@@ -5,7 +5,6 @@ import argparse
 import json
 from pathlib import Path
 import numpy as np
-#import mdtraj as md  # read xtc files
 
 c_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(c_dir,"src"))
@@ -19,9 +18,17 @@ def run(input_file):
    # start:
    #
    #---------------------------------------------------------------
+   print ("\n***************************************************************\n")   
+   print ("  *                                                             *\n")
+   print ("  *                     SPECTROSCOPY CODE                       *\n")
+   print ("  *                                                             *\n")
+   print ("  *                     VERSION: 08/26/2020                     *\n")
+   print ("  *                                                             *\n")
+   print ("  ***************************************************************\n")   
+
    myhost = os.uname()[1]
    start = datetime.now()
-   print (" \n\n Simulation starting: %s "%(start),flush=True)
+   print (" \n Simulation starting: %s "%(start),flush=True)
    print (" Hostname: %s \n\n"%(myhost),flush=True)
 
    #---------------------------------------------------------------
