@@ -2,11 +2,11 @@
    "simulation" : {
       "title"  : "test",
       "system" : "water",
-      "xtc_file" : "../traj.xtc",
-      "gro_file" : "../confout.gro",
+      "xtc_file" : "/home/2136/spec/traj.xtc",
+      "gro_file" : "/home/2136/spec/confout.gro",
       "correlation_time" : 1.5,
       "dt" : 0.01,
-      "nsegments" : 1,
+      "nsegments" : 10,
       "time_sep" : 2.0,
       "nfft" : 20000
    },
@@ -17,13 +17,13 @@
    },
 
    "spectroscopy" : {
-      "vib" : "IR", 
+      "vib1" : "IR", 
       "chromophore" : "OH_stretch",  
       "rlx_time" : 0.26
    },
  
    "parallel" : {
-      "num_threads" : 40
+      "num_threads" : 1
    }
 
 }

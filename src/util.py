@@ -3,7 +3,6 @@ import scipy.integrate as integrate
 import sys
 import warnings
 
-#warnings.simplefilter("ignore", N.ComplexWarning)
 
 def print_map_water_bend(name, maps):
     print ("---------------------------------------------------------------------")
@@ -110,14 +109,15 @@ def ir_end(jname, irtcf, nseg, tgrid, nfft, hbar, w_avg):
       Average IR tcf, FFT to get a line shape and 
       print IR both
    """
-   #irtcf[:] /= (3.0*nseg)
+   nsg = nseg + 1
+   warnings.simplefilter("ignore", np.ComplexWarning)
 
    filename = jname + "_ir_tcf.dat"
    f = open(filename,"w")
    f.write("# time \t Re{IR_TCF} \t Im{IR_TCF} \n")
    for n in range(len(tgrid)):
       f.write(" %7.5f \t %15.9f \t %15.9f \n"%
-             (tgrid[n], np.real(irtcf[n])/nseg, np.imag(irtcf[n])/nseg))
+             (tgrid[n], np.real(irtcf[n])/nsg, np.imag(irtcf[n])/nsg))
    f.close()
 
    dt = tgrid[1] - tgrid[0]
@@ -128,7 +128,7 @@ def ir_end(jname, irtcf, nseg, tgrid, nfft, hbar, w_avg):
    f.write("# frequency \t Intensity \n")
    for n in range(len(wgrid)):
       f.write(" %7.5f  \t %15.9f  \n"%
-             (wgrid[n], np.real(Cw[n])/nseg))
+             (wgrid[n], np.real(Cw[n])/nsg))
    f.close()
 
 def raman_end(jname, vvtcf, vhtcf, nseg, tgrid, nfft, hbar, w_avg):
@@ -136,8 +136,7 @@ def raman_end(jname, vvtcf, vhtcf, nseg, tgrid, nfft, hbar, w_avg):
       Average VV and VH Raman tcfs, FFT them and print
       various Raman lineshapes
    """
-   #vvtcf[:] /= nseg
-   #vhtcf[:] /= nseg
+   nsg = nseg + 1
 
    isotcf = vvtcf - 4.0*vhtcf/3.0
    unptcf = vvtcf + vhtcf
@@ -147,9 +146,9 @@ def raman_end(jname, vvtcf, vhtcf, nseg, tgrid, nfft, hbar, w_avg):
    f.write("# time \t Re{VV_TCF} \t Im{VV_TCF} \t Re{VH_TCF} \t Im{VH_TCF} \t Re{ISO_TCF} \t Im{ISO_TCF} \t Re{UNP_TCF} \t Im{UNP_TCF} \n") 
    for n in range(len(tgrid)):
       f.write(" %7.5f \t %15.9f \t %15.9f \t %15.9f \t %15.9f \t %15.9f \t %15.9f \t %15.9f \t %15.9f \n"%
-             (tgrid[n], np.real(vvtcf[n])/nseg,  np.imag(vvtcf[n])/nseg,  np.real(vhtcf[n])/nseg,  
-                        np.imag(vhtcf[n])/nseg,  np.real(isotcf[n])/nseg, np.imag(isotcf[n])/nseg, 
-                        np.real(unptcf[n])/nseg, np.imag(unptcf[n])/nseg)) 
+             (tgrid[n], np.real(vvtcf[n])/nsg,  np.imag(vvtcf[n])/nsg,  np.real(vhtcf[n])/nsg,  
+                        np.imag(vhtcf[n])/nsg,  np.real(isotcf[n])/nsg, np.imag(isotcf[n])/nsg, 
+                        np.real(unptcf[n])/nsg, np.imag(unptcf[n])/nsg)) 
    f.close()
 
    dt = tgrid[1] - tgrid[0]
@@ -164,8 +163,8 @@ def raman_end(jname, vvtcf, vhtcf, nseg, tgrid, nfft, hbar, w_avg):
    f.write("# frequency \t I{VV} \t I{VH} \t I{ISO} \t I{UNP} \n")
    for n in range(len(wgrid)):
       f.write(" %7.5f \t %15.9f \t %15.9f \t %15.9f \t %15.9f \n"%
-             (wgrid[n], np.real(Cw_vv[n])/nseg, np.real(Cw_vh[n])/nseg, 
-                        np.real(Cw_iso[n])/nseg, np.real(Cw_unp[n])/nseg))
+             (wgrid[n], np.real(Cw_vv[n])/nsg, np.real(Cw_vh[n])/nsg, 
+                        np.real(Cw_iso[n])/nsg, np.real(Cw_unp[n])/nsg))
    f.close()
 
    # calculate depolarization ratio
@@ -180,14 +179,14 @@ def sfg_end(jname, tcf, nseg, tgrid, nfft, hbar, w_avg):
       Average SFG ssp tcf, FFT to get a line shape and
       print IR both
    """
-   #tcf[:] /= nseg
+   nsg = nseg + 1
 
    filename = jname + "_ssp_tcf.dat"
    f = open(filename,"w")
    f.write("# time \t Re{SSP_TCF} \t Im{SSP_TCF} \n")
    for n in range(len(tgrid)):
       f.write(" %7.5f \t %15.9f \t %15.9f \n"%
-             (tgrid[n], np.real(tcf[n])/nseg, np.imag(tcf[n])/nseg))
+             (tgrid[n], np.real(tcf[n])/nsg, np.imag(tcf[n])/nsg))
    f.close()
 
    dt = tgrid[1] - tgrid[0]
@@ -198,7 +197,7 @@ def sfg_end(jname, tcf, nseg, tgrid, nfft, hbar, w_avg):
    f.write("# frequency \t Intensity \n")
    for n in range(len(wgrid)):
       f.write(" %7.5f  \t %15.9f \n"%
-             (wgrid[n], np.real(Cw[n])/nseg))
+             (wgrid[n], np.real(Cw[n])/nsg))
    f.close()
 
 def ftcf_end(jname, ftcf, nseg, nchrom, tgrid):

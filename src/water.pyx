@@ -9,6 +9,8 @@ cimport numpy as np
 import sys
 import json
 import util
+import itertools
+import mdtraj
 
 from libcpp cimport bool
 from libc.stdlib cimport malloc, free
@@ -33,10 +35,12 @@ from uwater cimport sfgTCF, dipolesf, updateFFCF
 
 CTYPE = np.complex128
 DTYPE = np.float64
+FTYPE = np.float32
 ITYPE = np.int32
 
 ctypedef np.int_t ITYPE_t
 ctypedef np.float64_t DTYPE_t
+ctypedef np.float32_t FTYPE_t
 ctypedef np.complex128_t CTYPE_t
 
 cdef extern from "cwater.h" nogil:
@@ -71,7 +75,7 @@ cdef extern from "tools.h" nogil:
    void progress(int i, int N, bool &printf)
           
 
-def run(traj, j):
+def run(j, xtc_file, gro_file):
 
    """
 
@@ -107,11 +111,17 @@ def run(traj, j):
    print (" Water model: %s "%(cwm['name']),flush=True)
    print (" Ref. %s \n"%(cwm['paper']),flush=True)
    print (cwm['note'],flush=True)
-   
-   # set charges and masses for every atom:
-   topology = traj.topology
+  
+   #-------------------------------------------------------------------------
+   #
+   # open trajectory file and set up some parameters
+   #
+   #--------------------------------------------------------------------------
+   tro = mdtraj.load_xtc(xtc_file, top=gro_file, frame=0)
+   topology = tro.topology
+   n_atoms  = tro.n_atoms
 
-   charges, mas, n_mols, mvM = util.set_water_params(topology, cwm, traj.n_atoms) 
+   charges, mas, n_mols, mvM = util.set_water_params(topology, cwm, n_atoms) 
 
    #-------------------------------------------------------------------------
    #
@@ -132,7 +142,8 @@ def run(traj, j):
    cdef int atoms_mol    = cwm['atoms_per_molecule']
    cdef int num_threads  = j['parallel']['num_threads']
 
-   cdef int natoms = traj.n_atoms
+   cdef int chunk_size = ncorr + ngap
+   cdef int natoms = n_atoms
    cdef int nmol   = n_mols
    cdef int nmol2  = 2*nmol
    cdef int nmol6  = 3*nmol2
@@ -154,10 +165,10 @@ def run(traj, j):
    #--------------------------------------------------------------------------
    # determine job type
    #--------------------------------------------------------------------------
-   ir    = False
-   raman = False
-   sfg   = False
-   cset  = False
+   cdef bool ir    = False
+   cdef bool raman = False
+   cdef bool sfg   = False
+   cdef bool cset  = False
 
    try:
       x = j["spectroscopy"]["vib1"]
@@ -273,12 +284,14 @@ def run(traj, j):
    cdef double complex Fmtu = 1.0
 
    cdef bool        moveM  = mvM
-   cdef double [:,:] box   = (traj.unitcell_lengths).astype(DTYPE)
+   #cdef double box #[:,:] box   #= (traj.unitcell_lengths).astype(DTYPE)
+   #cdef double xyz #[:,:,:] xyz #= (traj.xyz).astype(DTYPE)
    cdef double [:] chg     = charges.astype(DTYPE)
    cdef double [:] mass    = mas.astype(DTYPE)
-   cdef double [:,:,:] xyz = (traj.xyz).astype(DTYPE)
    cdef double [:] tgrid   = tg.astype(DTYPE)
 
+   cdef np.ndarray[DTYPE_t, ndim=3] xyz    = np.zeros([chunk_size,natoms,3], dtype=DTYPE)
+   cdef np.ndarray[DTYPE_t, ndim=2] box    = np.zeros([chunk_size,3], dtype=DTYPE) 
    cdef np.ndarray[DTYPE_t, ndim=1] eF     = np.zeros([nchrom], dtype=DTYPE)
    cdef np.ndarray[DTYPE_t, ndim=1] w10    = np.zeros([nchrom], dtype=DTYPE)
    cdef np.ndarray[DTYPE_t, ndim=1] w10_0  = np.zeros([nchrom], dtype=DTYPE)
@@ -320,10 +333,12 @@ def run(traj, j):
       vvtcf[:]  = 0.0
       vhtcf[:]  = 0.0
       ssptcf[:] = 0.0
-      for ns in range(nseg):
- 
-         idx = ns*(ncorr + ngap)
+      for ns, md in enumerate(itertools.islice(mdtraj.iterload(xtc_file, top=gro_file, chunk=chunk_size), nseg)):
 
+         box[:,:]   = 10.0*(md.unitcell_lengths).astype(DTYPE)
+         xyz[:,:,:] = 10.0*(md.xyz).astype(DTYPE)
+
+         idx  = 0
          Fmt[:,:] = np.eye(nchrom,dtype=DTYPE)
 
          with nogil:
@@ -334,6 +349,7 @@ def run(traj, j):
                OH_stretch_water_eField(&eF[0], &xyz[idx,0,0], &chg[0], natoms,
                                        &box[idx,0], nmol, atoms_mol, nchrom)
 
+
          water_OH_w10(w10, eF,  emapS, nchrom, num_threads, 0)
          water_OH_x10(x10, w10, emapS, nchrom, num_threads, 0)
          water_OH_m(m10, eF,  emapS, nchrom, num_threads, 0)
@@ -342,7 +358,6 @@ def run(traj, j):
             with parallel(num_threads=num_threads):
                water_OH_trdip(&tmc[0,0], &tmu[0,0], &xyz[idx,0,0], &box[idx,0], emapS.td,
                               nmol, atoms_mol);
-
 
          water_trans_dip(tdmV0, tmu, x10, m10, nchrom, num_threads)
          water_trans_pol(tpol0, tmu, x10, emapS.tbp, nchrom, num_threads) 
@@ -368,7 +383,7 @@ def run(traj, j):
                      moveMe3b3(&xyz[idx,0,0], &box[idx,0], nmol)
 
                OH_stretch_water_eField(&eF[0], &xyz[idx,0,0], &chg[0], natoms, 
-                                          &box[idx,0], nmol, atoms_mol, nchrom)
+                                       &box[idx,0], nmol, atoms_mol, nchrom)
 
             water_OH_w10(w10, eF,  emapS, nchrom, num_threads, 0)
             water_OH_x10(x10, w10, emapS, nchrom, num_threads, 0)
@@ -400,9 +415,12 @@ def run(traj, j):
   
          # print results
          if printf:
-            util.ir_end(jname, mtcf, ns, tgrid, nfft, hbar, w_avg)
-            util.raman_end(jname, vvtcf, vhtcf, ns, tgrid, nfft, hbar, w_avg)
-            util.sfg_end(jname, ssptcf, ns, tgrid, nfft, hbar, w_avg)
+            if ir:
+               util.ir_end(jname, mtcf, ns, tgrid, nfft, hbar, w_avg)
+            if raman:
+               util.raman_end(jname, vvtcf, vhtcf, ns, tgrid, nfft, hbar, w_avg)
+            if sfg:
+               util.sfg_end(jname, ssptcf, ns, tgrid, nfft, hbar, w_avg)
 
    #---------------------------------------------------------------------------------
    #
@@ -414,8 +432,13 @@ def run(traj, j):
       vvtcf[:]  = 0.0
       vhtcf[:]  = 0.0
       ssptcf[:] = 0.0
-      for ns in range(nseg):
-         idx = ns*(ncorr + ngap)
+
+      for ns, md in enumerate(itertools.islice(mdtraj.iterload(xtc_file, top=gro_file, chunk=chunk_size), nseg)):
+
+         box[:,:]   = 10.0*(md.unitcell_lengths).astype(DTYPE)
+         xyz[:,:,:] = 10.0*(md.xyz).astype(DTYPE)
+
+         idx = 0
          Fmt[:,:] = np.eye(nchrom,dtype=DTYPE)
 
          with nogil:
@@ -474,15 +497,18 @@ def run(traj, j):
          progress(ns, nseg, printf)
    
          if printf:
-            util.ir_end(jname, mtcf, ns, tgrid, nfft, hbar, w_avg)
-            util.raman_end(jname, vvtcf, vhtcf, ns, tgrid, nfft, hbar, w_avg)
-            util.sfg_end(jname, ssptcf, ns, tgrid, nfft, hbar, w_avg)
+            if ir:
+               util.ir_end(jname, mtcf, ns, tgrid, nfft, hbar, w_avg)
+            if raman:
+               util.raman_end(jname, vvtcf, vhtcf, ns, tgrid, nfft, hbar, w_avg)
+            if sfg:
+               util.sfg_end(jname, ssptcf, ns, tgrid, nfft, hbar, w_avg)
 
-   #---------------------------------------------------------------------------------
-   #
-   # OH stretch and HOH bend overtone IR pure water
-   #
-   #---------------------------------------------------------------------------------
+   ##---------------------------------------------------------------------------------
+   ##
+   ## OH stretch and HOH bend overtone IR pure water
+   ##
+   ##---------------------------------------------------------------------------------
    elif j['spectroscopy']['chromophore'] == 'HOH_bend_overtone_OH_stretch':
       mtcf[:]   = 0.0
       Vf[:,:]   = 0.0
@@ -495,9 +521,13 @@ def run(traj, j):
          Vf[nmol2+n,2*n  ] = fc
          Vf[nmol2+n,2*n+1] = fc
 
-      for ns in range(nseg):
+      for ns, md in enumerate(itertools.islice(mdtraj.iterload(xtc_file, top=gro_file, chunk=chunk_size), nseg)):
+
+         box[:,:]   = 10.0*(md.unitcell_lengths).astype(DTYPE)
+         xyz[:,:,:] = 10.0*(md.xyz).astype(DTYPE)
+
+         idx  = 0
  
-         idx = ns*(ncorr + ngap)
          Fmt[:,:] = np.eye(nchrom,dtype=DTYPE)
 
          with nogil:
@@ -521,7 +551,7 @@ def run(traj, j):
 
          water_HOH_w20(w10, eF,  emapB, nmol, num_threads, nmol2)
          water_HOH_t20(x10, w10, emapB, nmol, num_threads, nmol2)
-         #water_HOH_m(m10, eF,  emapB, nmol, num_threads, nmol2)
+        #water_HOH_m(m10, eF,  emapB, nmol, num_threads, nmol2)
          water_trans_dip(tdmV0, tmu, x10, m10, nchrom, num_threads)
          water_trans_pol(tpol0, tmu, x10, emapS.tbp, nchrom, num_threads) 
          water_trans_pol_bend(tpol0, tps, x10, nmol, nchrom, nmol2, num_threads) 
@@ -584,22 +614,28 @@ def run(traj, j):
 
       # print
          if printf:
-            util.ir_end(jname, mtcf, ns, tgrid, nfft, hbar, w_avg)
-            util.raman_end(jname, vvtcf, vhtcf, ns, tgrid, nfft, hbar, w_avg)
-            util.sfg_end(jname, ssptcf, ns, tgrid, nfft, hbar, w_avg)
+            if ir:
+               util.ir_end(jname, mtcf, ns, tgrid, nfft, hbar, w_avg)
+            if raman:
+               util.raman_end(jname, vvtcf, vhtcf, ns, tgrid, nfft, hbar, w_avg)
+            if sfg:
+               util.sfg_end(jname, ssptcf, ns, tgrid, nfft, hbar, w_avg)
 
-   #------------------------------------------------------------------------------
-   #
-   # OH stretch uncoupled, FFCF only
-   #
-   #------------------------------------------------------------------------------
+   ##------------------------------------------------------------------------------
+   ##
+   ## OH stretch uncoupled, FFCF only
+   ##
+   ##------------------------------------------------------------------------------
    elif j['spectroscopy']['chromophore'] == 'OH_stretch_uncoupled':
       ftcf[:]   = 0.0
       ww0 = <double *> malloc(nseg*nchrom*ncorr*sizeof(double))
 
-      for ns in range(nseg):
- 
-         idx = ns*(ncorr + ngap)
+      for ns, md in enumerate(itertools.islice(mdtraj.iterload(xtc_file, top=gro_file, chunk=chunk_size), nseg)):
+
+         box[:,:]   = 10.0*(md.unitcell_lengths).astype(DTYPE)
+         xyz[:,:,:] = 10.0*(md.xyz).astype(DTYPE)
+
+         idx  = 0
 
          with nogil:
             with parallel(num_threads=num_threads):

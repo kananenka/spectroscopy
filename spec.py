@@ -5,17 +5,12 @@ import argparse
 import json
 from pathlib import Path
 import numpy as np
-import mdtraj as md  # read xtc files
-
-#pwd = "/work/akanane/sw/spectroscopy"
-#sys.path.insert(0, os.path.join(pwd,"src"))
+#import mdtraj as md  # read xtc files
 
 c_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(c_dir,"src"))
 
-#ipath = os.path.abspath(os.path.dirname(os.path.abspath(__file__))) + "./src"
-#sys.path.insert(0, ipath)
-
+# import all modules here:
 import water
 
 def run(input_file):
@@ -80,13 +75,16 @@ def run(input_file):
    gfile = Path(gro_file)
    if xfile.is_file():
       if gfile.is_file():
-         print (" xtc file: ",xtc_file)
-         print (" gro file: ",gro_file)
-         print (" Loading the trajectory file...")
-         traj = md.load(xtc_file, top=gro_file)
-         print (" The units of length are assumed to be nm. ")
-         traj.xyz *= 10.0 # to convert to A
-         traj.unitcell_lengths *= 10.0 # to convert to A
+         print (" xtc file: %s "%(xtc_file))
+         print (" gro file: %s "%(gro_file))
+         # no longer loading the entire trajectory at once
+         # will pre-load segments for efficient memory handling
+         # 
+         #print (" Loading the trajectory file...")
+         #traj = md.load(xtc_file, top=gro_file)
+         #print (" The units of length are assumed to be nm. ")
+         #traj.xyz *= 10.0 # to convert to A
+         #traj.unitcell_lengths *= 10.0 # to convert to A
       else:
          print (" gro file %s is not found! "%(gfile))
          sys.exit()
@@ -99,11 +97,21 @@ def run(input_file):
    # Perform various checks here 
    # 1. check if we have trajectory that is long enough:
    #
+   try:
+      x = j['simulation']['nsegments']
+   except KeyError:
+      print (" Error! 'nsegments' is not set under 'simulation' ",flush=True)
+      sys.exit()
+   print (" Number of trajectory segments: %d "%(int(j['simulation']['nsegments'])),flush=True)
+   print (" Segments will be separated by: %d timesteps "%(int(j['simulation']['time_sep']/j['simulation']['dt'])),flush=True)
+
    sim_time = j['simulation']['nsegments']*(j['simulation']['time_sep']
             + j['simulation']['correlation_time'])-j['simulation']['time_sep']
-   print (" Length of trajectory needed: ", int(sim_time/j['simulation']['dt'])) 
-   print (" Length of trajectory provided: ",traj.n_frames)
-   assert traj.n_frames > int(sim_time/j['simulation']['dt']), " Your trajectory is too short "
+   print (" Length of trajectory needed: %d frames "%(int(sim_time/j['simulation']['dt'])))
+   #print (" Length of trajectory provided: ",traj.n_frames)
+
+   # this will need to be changed....
+   #assert traj.n_frames > int(sim_time/j['simulation']['dt']), " Your trajectory is too short "
 
    # check dt from traj object and input
 
@@ -153,7 +161,7 @@ def run(input_file):
          sys.exit()
 
       # if all is good, run water module
-      water.run(traj, j)
+      water.run(j,xtc_file,gro_file)
    else:
       print (" Error. Cannot recognize simulation system: %s "%j['simulation']['system'])
       sys.exit()
