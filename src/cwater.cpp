@@ -31,9 +31,9 @@ void moveMe3b3(double *xyz, double *box, int nmol)
 
      dist = norm_3D(vx, vy, vz);
 
-     xyz[n*12+9]  = xyz[n*12]   + 0.0150*vx/dist;
-     xyz[n*12+10] = xyz[n*12+1] + 0.0150*vy/dist;
-     xyz[n*12+11] = xyz[n*12+2] + 0.0150*vz/dist;
+     xyz[n*12+9]  = xyz[n*12]   + 0.150*vx/dist;
+     xyz[n*12+10] = xyz[n*12+1] + 0.150*vy/dist;
+     xyz[n*12+11] = xyz[n*12+2] + 0.150*vz/dist;
  
   }
 }
@@ -314,6 +314,7 @@ void OH_stretch_water_eField(double *eF, double *xyz,
             vOjHi_y = Oj_y - Hi_y;
             vOjHi_z = Oj_z - Hi_z;
 
+
             vOjHi_x = minImage(vOjHi_x, box[0]);
             vOjHi_y = minImage(vOjHi_y, box[1]);
             vOjHi_z = minImage(vOjHi_z, box[2]);
@@ -347,6 +348,7 @@ void OH_stretch_water_eField(double *eF, double *xyz,
                ex += AHx*es;
                ey += AHy*es;
                ez += AHz*es;
+
             }
          }
          eF[2*i+h] = dot_3D(ex,ey,ez,uOHi_x,uOHi_y,uOHi_z);

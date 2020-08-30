@@ -349,7 +349,6 @@ def run(j, xtc_file, gro_file):
                OH_stretch_water_eField(&eF[0], &xyz[idx,0,0], &chg[0], natoms,
                                        &box[idx,0], nmol, atoms_mol, nchrom)
 
-
          water_OH_w10(w10, eF,  emapS, nchrom, num_threads, 0)
          water_OH_x10(x10, w10, emapS, nchrom, num_threads, 0)
          water_OH_m(m10, eF,  emapS, nchrom, num_threads, 0)
@@ -362,10 +361,10 @@ def run(j, xtc_file, gro_file):
          water_trans_dip(tdmV0, tmu, x10, m10, nchrom, num_threads)
          water_trans_pol(tpol0, tmu, x10, emapS.tbp, nchrom, num_threads) 
 
-         sfg_switch_oxy(&sff[0], &xyz[idx,0,0], &box[idx,0], &mass[0], 
-                        nchrom, nmol, atoms_mol, 1)
-         #sfg_switch_trdip(&sff[0], &xyz[idx,0,0], &box[idx,0], &mass[0],
-         #                 &tmc[0,0], nchrom, nmol, atoms_mol, 1)
+         #sfg_switch_oxy(&sff[0], &xyz[idx,0,0], &box[idx,0], &mass[0], 
+         #               nchrom, nmol, atoms_mol, 1)
+         sfg_switch_trdip(&sff[0], &xyz[idx,0,0], &box[idx,0], &mass[0],
+                          &tmc[0,0], nchrom, nmol, atoms_mol, 1)
 
          dipolesf(tdmV0, tdmVsz, sff, nchrom, num_threads)
 

@@ -18,13 +18,13 @@ def run(input_file):
    # start:
    #
    #---------------------------------------------------------------
-   print ("\n***************************************************************\n")   
-   print ("  *                                                             *\n")
-   print ("  *                     SPECTROSCOPY CODE                       *\n")
-   print ("  *                                                             *\n")
-   print ("  *                     VERSION: 08/26/2020                     *\n")
-   print ("  *                                                             *\n")
-   print ("  ***************************************************************\n")   
+   print ("***************************************************************")   
+   print ("*                                                             *")
+   print ("*                     SPECTROSCOPY CODE                       *")
+   print ("*                                                             *")
+   print ("*                     VERSION: 08/30/2020                     *")
+   print ("*                                                             *")
+   print ("***************************************************************")   
 
    myhost = os.uname()[1]
    start = datetime.now()
@@ -110,7 +110,9 @@ def run(input_file):
       print (" Error! 'nsegments' is not set under 'simulation' ",flush=True)
       sys.exit()
    print (" Number of trajectory segments: %d "%(int(j['simulation']['nsegments'])),flush=True)
-   print (" Segments will be separated by: %d timesteps "%(int(j['simulation']['time_sep']/j['simulation']['dt'])),flush=True)
+
+   if j['simulation']['nsegments'] > 1:
+      print (" Segments will be separated by: %d timesteps "%(int(j['simulation']['time_sep']/j['simulation']['dt'])),flush=True)
 
    sim_time = j['simulation']['nsegments']*(j['simulation']['time_sep']
             + j['simulation']['correlation_time'])-j['simulation']['time_sep']

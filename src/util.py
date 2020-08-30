@@ -179,6 +179,8 @@ def sfg_end(jname, tcf, nseg, tgrid, nfft, hbar, w_avg):
       Average SFG ssp tcf, FFT to get a line shape and
       print IR both
    """
+   warnings.simplefilter("ignore", np.ComplexWarning)
+
    nsg = nseg + 1
 
    filename = jname + "_ssp_tcf.dat"
