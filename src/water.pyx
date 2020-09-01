@@ -130,6 +130,7 @@ def run(j, xtc_file, gro_file):
    #-------------------------------------------------------------------------
 
    cdef double A_to_au3  = A_to_au*A_to_au*A_to_au
+   cdef double nm_to_A   = 10.0
 
    jname                 = j['simulation']['title']
    cdef int nseg         = j['simulation']['nsegments']
@@ -335,8 +336,8 @@ def run(j, xtc_file, gro_file):
       ssptcf[:] = 0.0
       for ns, md in enumerate(itertools.islice(mdtraj.iterload(xtc_file, top=gro_file, chunk=chunk_size), nseg)):
 
-         box[:,:]   = 10.0*(md.unitcell_lengths).astype(DTYPE)
-         xyz[:,:,:] = 10.0*(md.xyz).astype(DTYPE)
+         box[:,:]   = nm_to_A*(md.unitcell_lengths).astype(DTYPE)
+         xyz[:,:,:] = nm_to_A*(md.xyz).astype(DTYPE)
 
          idx  = 0
          Fmt[:,:] = np.eye(nchrom,dtype=DTYPE)
@@ -434,8 +435,8 @@ def run(j, xtc_file, gro_file):
 
       for ns, md in enumerate(itertools.islice(mdtraj.iterload(xtc_file, top=gro_file, chunk=chunk_size), nseg)):
 
-         box[:,:]   = 10.0*(md.unitcell_lengths).astype(DTYPE)
-         xyz[:,:,:] = 10.0*(md.xyz).astype(DTYPE)
+         box[:,:]   = nm_to_A*(md.unitcell_lengths).astype(DTYPE)
+         xyz[:,:,:] = nm_to_A*(md.xyz).astype(DTYPE)
 
          idx = 0
          Fmt[:,:] = np.eye(nchrom,dtype=DTYPE)
@@ -522,8 +523,8 @@ def run(j, xtc_file, gro_file):
 
       for ns, md in enumerate(itertools.islice(mdtraj.iterload(xtc_file, top=gro_file, chunk=chunk_size), nseg)):
 
-         box[:,:]   = 10.0*(md.unitcell_lengths).astype(DTYPE)
-         xyz[:,:,:] = 10.0*(md.xyz).astype(DTYPE)
+         box[:,:]   = nm_to_A*(md.unitcell_lengths).astype(DTYPE)
+         xyz[:,:,:] = nm_to_A*(md.xyz).astype(DTYPE)
 
          idx  = 0
  
@@ -631,8 +632,8 @@ def run(j, xtc_file, gro_file):
 
       for ns, md in enumerate(itertools.islice(mdtraj.iterload(xtc_file, top=gro_file, chunk=chunk_size), nseg)):
 
-         box[:,:]   = 10.0*(md.unitcell_lengths).astype(DTYPE)
-         xyz[:,:,:] = 10.0*(md.xyz).astype(DTYPE)
+         box[:,:]   = nm_to_A*(md.unitcell_lengths).astype(DTYPE)
+         xyz[:,:,:] = nm_to_A*(md.xyz).astype(DTYPE)
 
          idx  = 0
 
